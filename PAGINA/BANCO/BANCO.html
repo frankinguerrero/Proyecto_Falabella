@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Banco Falabella</title>
+        <link rel="stylesheet" href="css_nueva.css">
+
+    </head>
+    <body>
+        <p> <img id ="old" src="https://www.bancofalabella.pe/assets/logo.svg"/> 
+        <header>
+            <nav>
+                <a href="#">TARGETA DE CREDITO</a>
+                <a href="#">CRÉDITOS</a>
+                <a href="#">CUENTAS</a>
+                <a href="#">CMR PUNTOS</a>
+                <a href="#">SEGUROS</a>
+                <a href="#">PROMOCIONES</a>
+            </header>
+            </br>
+            </br>
+            </br>
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="https://lh6.googleusercontent.com/7AN6iSl3vK5w1pAE20eGimfAYMvnryUZnELfcqHhBWySomD8ngM6rTN8gjJVAalnduRNaPsYS6bVjdb-E6ARuRF2ufnFncL_EEtp2-JHH31ggSi0--Fpko5D2cQ8sxrJuA=w1280" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="https://lh4.googleusercontent.com/aZHHWAX4hylYKRH0divnx3M5wCbHhvufW8IH-KsKy7I76htx7vuufpftSqrSAgflgTjQAKVvWM_rGbmlYrty5CvU-_J6km8qArqP4odl-m891qRrJL4nDxmU1ZePQlbBdg=w1280" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="https://lh6.googleusercontent.com/fnsMFfllao_rkHzoFZMlh5X5SOVDZB8I-kRrCF_KiiIZckKdVgwhfbJ3BP47Rf5hK0hboBhT2crjaLxLo9IqOryZ6oWaIxPTrRP-EaMfIfeFGJ2cqjken2kicj4D06hq1w=w1280" style="width:100%">
+                  <div class="text"></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="https://lh5.googleusercontent.com/-BBT_19FQmTl_ab3XjXtai7FZ-WanA8f3ACydHrs7EeHRUGWevxJfKU2nl3X57U0rf6LYmF0S4WZID-LswRzdreprxuZEKPro7Gc5zliRZgPEdjI-GsPG3gPgF3NtZutUQ=w1280" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="https://lh6.googleusercontent.com/McdQXza8oWRARk3BC5XRZC3CKBwyjZzsGGuF0JEyz5_3flUJxwoGNakrkznWwnFFCSzlKHyR9PiKUwHqb067Km2eiLeRUNBmjICwS0SnxCZjyEpbP8wz2P5XY6Uaxks5Vw=w1280" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="https://lh5.googleusercontent.com/HDRnDj_ZBZwD_PPNKdx4bouYk4R2soCUOmcEiFYB61xQlXVaJxVkbBu4-JnT6nXeFE5gE3QlJYG6LQE0KcU3Yt53SMJdPocrCifBUW8CghjLKsd9j3uY2vMkB97WX7rOZg=w1280" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="https://lh5.googleusercontent.com/0lK7pykw7fq2Gehp9qMCnMRblZ_VERM02cfm7-JK40K993WrX2uCwSn8HCbUXGGiW_RcqK3BmQGiiPBNx4ca6dVO9N18tuYw6ATXArHvJI3ypyIozNr7PXskFLmbEdHU1Q=w1280" style="width:100%">
+                    <div class="text"></div>
+                  </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+              </div>
+              <script>
+                  var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+              </script>
+              </br>
+            </br>
+            </br>
+            <div class="noticia">
+                <img class="izquierda" src="https://lh3.googleusercontent.com/ts4zSSr_DqbsR3I9eag-I4M7k9LDri0YglTJJ9FklkjDnIAM1EWo81IY6vkgTlxBQ5SFft98b6iw75VXjIrpdgDrZBlwIue2exHb2XiRXvJhtzUDX_UiLOjihM4GZl187A=w1280"><aside>Solicita tus Tarjetas Adicionales 100% online
+                    Puedes realizarlo desde la Banca por Internet ingresando con tu Clave Internet.</aside>              </div>
+              
+              <div class="noticia">
+                <aside>¡Tan simple como leer este banner, es crear tu Clave Internet!</aside><img class="derecha" src="https://lh3.googleusercontent.com/l-ryCllrPsJxZ2yVj6GUAcsaiKksPZzRwPeLdSQ5dUWzGA0bObms_sQ1JQBi7nuaAiYVBlzUXV2BDWYhhi8h93wyfxaVR2h1BIVTdjG9pFBdMn5FwFuAyRikC5fCK_uG3g=w1280">
+              </div>
+              <div class="noticia">
+                <img class="izquierda" src="https://lh4.googleusercontent.com/1ZSLKWx_8UETxOVR4tDwLrNoKjaYDBgwfN03W0x5-7b9OjSXjqizpmdmrZTiqrgLdX1BqZOR18KEA-YGcqdFzOtNFDgjEDg4hDeUqfQhu79nCY6oQ8hAbePdZcdl-kjGbQ=w1280"><aside>¡Los Gennials aprovechamos los beneficios con nuestra CMR!
+                    Recuerda elegir la opción "aplazar pago por 2 meses" al momento de finalizar tu compra en Falabella.com. Válido hasta el 18/07.</aside>              </div>
+              
+              <div class="noticia">
+                <aside>Canjea tus CMR Puntos en línea
+                    Canjea productos, vales de descuentos y mucho más.</aside><img class="derecha" src="https://lh6.googleusercontent.com/NLbFV_MqTCEbYpUokq4T56GAKEYizJj9h8ei-s1bBm_mwT35ybAmXMma0fUvtNTW39yXlTvkfk3bFRWm3o7WLr5qpWSCy_qfHjBBDQmrOK2_g48Y0l62LIw292kgcTxmFA=w1280">
+              </div>
+
+              <div class="noticia">
+                <img class="izquierda" src="https://lh4.googleusercontent.com/3VCmauCejU7u_rSkebPIFSW0lDQlGolIeHYocYUZ1-YYn97qUOG34WmtvI6hf6MkehLXT__fhcIdZpPJlVaaRdB2eNLDnG3CuoAB-_Yu_HbUotNyBMhEdUTAS4H0sIWGVg=w1280"><aside>¡Descuentos los 7 días de la semana!
+                    Los Gennials aprovechamos los Días Imbatibles con nuestra CMR en Tottus.</aside>              </div>
+              
+              <div class="noticia">
+                <aside>¡Todo junio aprovecha esta gran descuento!
+                    Los Gennials disfrutan con su familia y amigos.</aside><img class="derecha" src="https://lh3.googleusercontent.com/9eIP5dmQgt5a9poYhyzDU8ApZhVjcYuS6co6lO-dTyMeqqYfMHac4mKKAFXqWC16iDv7T2EYIKQlfcPZt2tRhSgkMMVm6tvjRmhOnIZfVMnEWGSvqiqAVjPBKg1KEd4gyg=w1280">
+              </div>
+              <div class="noticia">
+                <img class="izquierda" src="https://lh4.googleusercontent.com/kLJy5b7YaGzVY6xJQ1Q5AxKerFKs94tKdK94GPPczPzMw_OjGs6h7WJj51yFPaTG6M89fQAwbONoZlTOi47lGDYrSPLUJfoixJWM5oLZQMY7qfNcyIVRmqO0XInLA5ix=w1280"><aside>¡Descuentos en cientos de establecimientos!
+                    Los Gennials disfrutamos más beneficios.</aside>              </div>
+              
+              <div class="noticia">
+                <aside>Descubre Fpay y paga desde tu celular
+                    Descarga la App, afilia tus Tarjetas y paga en Falabella, Sodimac y Tottus</aside><img class="derecha" src="https://lh5.googleusercontent.com/66lddUAfxn1f71UrDpjKp7i6R5SHlFaEWUIGeUj81yPNgQiiuMjyli1M6vGX8EuXp2gW75hHFRwrljtOEWp6FYGQNYCZ5v8P9Nup1bqLPubRG8ZfXSjZT5xLwyrPeWdNaw=w1280">
+              </div>
+              <div class="noticia">
+                <img class="izquierda" src="https://lh4.googleusercontent.com/b5ls3pt8J4VU4fjNRbaTcs7yFOpASn12PxHBD0mr0zHCUXQGQVZ8goSbTT7EdeR4nq5HmxugnR2zdJrLAXY3njn7vGVeY7GTM_J8G4MncvFUaKfg-xOv0G3o7JFCsOrQ=w1280"><aside>¡No te pierdas esta oportunidad!
+                    Con tu seguro de Auto puedes llevarte una GiftCard para canjear un Smart TV LG de 43” o lo que más quieras.</aside>              </div>
+              
+              <div class="noticia">
+                <aside>Campaña Abono CTS
+                    Revisa todos los medios por donde puedes realizar el abono a tus trabajadores.</aside><img class="derecha" src="https://lh5.googleusercontent.com/Ur2fZvXYy1i2S0mQMFiwUueyxQ5vjP7peuV7JTsV-W9EybJW4vp8rIUN6jcAZ3NK2JAdW18Nb6GmF96ZWu7a-eX9Zjf5YqhH65yOqi7eZm_MLC3IhxmZQ3JgSNKmoZHBJA=w1280">
+              </div>
+              <div class="noticia">
+                <img class="izquierda" src="https://lh3.googleusercontent.com/uu646h5VUlISvGr3ugJ0rBlC8eWrl0lXe7gaX9OswLe7jaH4KvgWgdjhkf9zEtByi0VgNZfr3AJhqG54N8bRQjSvVLbp3WnUobxil5ZY_GPYfGpVVwI_J_YRT3sK6nVb=w1280"><aside>¡Banco Falabella te acompaña!
+                </aside>              </div>
+              
+              <div class="noticia">
+                <aside>¡Conoce más sobre el nuevo diseño de tu Estado de Cuenta CMR junto a Eddu!</aside><img class="derecha" src="https://lh3.googleusercontent.com/GyREWCbGxAU4GGaKlu9jnBIJ-gyVwY2pXBqSSXOx3PX6TQNLProHGLNbmLUPLXmkbVSnLW7KglXS5QgAcA2AV87JAOZ3IRD0L0unoh7ykWqLGtPenGdRFKjUrfgtSQUIEQ=w1280">
+              </div>
+              <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<!--footer starts from here-->
+<footer class="footer">
+<div class="container bottom_border">
+<div class="row">
+<div class=" col-sm-4 col-md col-sm-4  col-12 col">
+<h5 class="headin5_amrc col_white_amrc pt2">SOBRE BANCO FALABELLA</h5>
+<ul class="footer_ul_amrc">
+    <li><a href="http://webenlance.com">Quiénes Somos</a></li>
+    <li><a href="http://webenlance.com">Memoria Anual</a></li>
+    <li><a href="http://webenlance.com">Hechos de Importancia (SMV)</a></li>
+    <li><a href="http://webenlance.com">Trabaja con nosotros</a></li>
+    <li><a href="http://webenlance.com">Responsabilidad Social</a></li>
+    <li><a href="http://webenlance.com">Reporte de Sostenibilidad</a></li>
+    <li><a href="http://webenlance.com">Comunicado Covid-19</a></li>
+    <li><a href="http://webenlance.com">Extranet</a></li>
+    </ul>
+
+
+</div>
+
+
+<div class=" col-sm-4 col-md  col-6 col">
+<h5 class="headin5_amrc col_white_amrc pt2">TRANSPARENCIA</h5>
+<!--headin5_amrc-->
+<ul class="footer_ul_amrc">
+<li><a href="http://webenlance.com">Tasas y tarifa</a></li>
+<li><a href="http://webenlance.com">Contratos</a></li>
+<li><a href="http://webenlance.com">Fórmulas y ejemplos</a></li>
+<li><a href="http://webenlance.com">Estadísticas de reclamos de clientes</a></li>
+<li><a href="http://webenlance.com">Información del Sistema Financiero</a></li>
+<li><a href="http://webenlance.com">Procedimientos de atención al cliente</a></li>
+<li><a href="http://webenlance.com">Buenas Prácticas</a></li>
+<li><a href="http://webenlance.com">Política de Privacidad</a></li>
+<li><a href="http://webenlance.com">Hoja Informativa Videovigilancia</a></li>
+<li><a href="http://webenlance.com">Recomendaciones de Seguridad</a></li>
+<li><a href="http://webenlance.com">Simuladores</a></li>
+<li><a href="http://webenlance.com">Código Interbancario</a></li>
+<li><a href="http://webenlance.com">Canal de integridad</a></li>
+<li><a href="http://webenlance.com">Código de ética</a></li>
+<li><a href="http://webenlance.com">Términos y Condiciones de Campañas</a></li>
+<li><a href="http://webenlance.com">Comprobantes de pago electrónico</a></li>
+<li><a href="http://webenlance.com">Política de Prevención del Delito</a></li>
+</ul>
+<!--footer_ul_amrc ends here-->
+</div>
+
+
+<div class=" col-sm-4 col-md  col-6 col">
+<img class="headin5_amrc col_white_amrc pt2" src="https://www.bancofalabella.pe/assets/libro-reclamaciones.png">
+
+
+<!--footer_ul_amrc ends here-->
+</div>
+
+
+<div class=" col-sm-4 col-md  col-12 col">
+<h5 class="headin5_amrc col_white_amrc pt2"></h5>
+<!--headin5_amrc ends here-->
+
+<ul class="social_footer_ul">
+    <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="http://webenlance.com"><i class="fab fa-youtube"></i></a></li>
+</ul>
+<!--footer_ul2_amrc ends here-->
+</div>
+</div>
+</div>
+
+
+
+<!--foote_bottom_ul_amrc ends here-->
+
+
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- Crédit to https://bootsnipp.com/snippets/bxDBA -->
+        </body>
+        </html>
